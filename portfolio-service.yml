@@ -1,9 +1,14 @@
 spring:
   application:
      name: portfolio-service
+  sleuth:
+     sampler:
+       percentage: 1.0
+
   jpa:
      hibernate:
         ddl-auto: update
 security:
   basic:
     enabled: false
+logging.level.org.springframework.cloud.sleuth: DEBUG
