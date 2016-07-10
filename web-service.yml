@@ -1,6 +1,9 @@
 spring:
   application:
      name: web-service
+  sleuth:
+     sampler:
+       percentage: 1.0
 eureka:
   client:
     registerWithEureka: true
@@ -11,3 +14,4 @@ pivotal:
     symbols:
       it: EMC,ORCL,IBM,INTC,AMD,HPQ,CSCO,AAPL
       fs: JPM,C,MS,BAC,GS,WFC,BK
+logging.level.org.springframework.cloud.sleuth: DEBUG
