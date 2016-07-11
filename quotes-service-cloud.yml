@@ -1,6 +1,10 @@
 spring:
   application:
      name: quotes-service
+  sleuth:
+     sampler:
+       percentage: 1.0
+
 pivotal:
   quotes:
     quotes_url: http://dev.markitondemand.com/Api/v2/Quote/json?symbol={symbol}
@@ -11,3 +15,4 @@ pivotal:
 security:
   basic:
     enabled: false
+logging.level.org.springframework.cloud.sleuth: DEBUG
