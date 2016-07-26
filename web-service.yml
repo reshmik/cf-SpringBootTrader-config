@@ -4,9 +4,6 @@ spring:
   sleuth:
      sampler:
        percentage: 1.0
-  jackson:
-     deserialization:
-       FAIL_ON_UNKNOWN_PROPERTIES: false
 eureka:
   client:
     registerWithEureka: true
@@ -17,6 +14,9 @@ pivotal:
     symbols:
       it: EMC,ORCL,IBM,INTC,AMD,HPQ,CSCO,AAPL
       fs: JPM,C,MS,BAC,GS,WFC,BK
+security:
+  basic:
+    enabled: false
 logging:
   level:
     org.springframework.cloud.sleuth: DEBUG
