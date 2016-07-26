@@ -4,9 +4,6 @@ spring:
   sleuth:
      sampler:
        percentage: 1.0
-  jackson:
-     deserialization:
-       FAIL_ON_UNKNOWN_PROPERTIES: false
 pivotal:
   quotes:
     quotes_url: http://dev.markitondemand.com/Api/v2/Quote/json?symbol={symbol}
