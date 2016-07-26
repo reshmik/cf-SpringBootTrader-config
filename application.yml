@@ -17,3 +17,5 @@ logging:
         springframework:
            web: WARN
            cloud: WARN
+           cloud.sleuth: DEBUG
+    
