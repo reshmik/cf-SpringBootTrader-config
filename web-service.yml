@@ -14,9 +14,6 @@ pivotal:
     symbols:
       it: EMC,ORCL,IBM,INTC,AMD,HPQ,CSCO,AAPL
       fs: JPM,C,MS,BAC,GS,WFC,BK
-security:
-  basic:
-    enabled: false
 logging:
   level:
     org.springframework.cloud.sleuth: DEBUG
