@@ -4,11 +4,16 @@ spring:
   sleuth:
      sampler:
        percentage: 1.0
+  jackson:
+     deserialization:
+       FAIL_ON_UNKNOWN_PROPERTIES: false
   jpa:
      hibernate:
         ddl-auto: update
 security:
   basic:
     enabled: false
-logging.level.org.springframework.cloud.sleuth: DEBUG
+logging:
+  level:
+    org.springframework.cloud.sleuth: DEBUG
 
